@@ -28,7 +28,7 @@ If you plan to use **Visual Studio Code (VS Code)** for running and editing R sc
 Once these steps are completed, you should be able to write and execute R scripts smoothly within VS Code.
 
 
-## Repository Contents
+# Repository Contents
 
 ## `lslr.R` Description
 
