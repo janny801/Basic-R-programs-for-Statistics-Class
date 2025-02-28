@@ -26,3 +26,18 @@ If you plan to use **Visual Studio Code (VS Code)** for running and editing R sc
 4. **Restart VS Code** to ensure all extensions are loaded correctly.
 
 Once these steps are completed, you should be able to write and execute R scripts smoothly within VS Code.
+
+
+## Repository Contents
+
+## `lslr.R` Description
+
+The `lslr.R` script performs a **simple linear regression** using a set of `x` and `y` values. It:
+
+1. Defines two vectors (`x` and `y`) containing numeric data.
+2. Creates a linear model (`lm(y ~ x)`) to predict `y` based on `x`.
+3. Extracts **residuals** (differences between actual and predicted values).
+4. Extracts **fitted values** (predicted `y` values from the model).
+5. Plots the residuals against `x` in a **residual plot**, which helps visualize how well the model fits the data.
+
+
