@@ -30,8 +30,7 @@ Once these steps are completed, you should be able to write and execute R script
 
 # Repository Contents
 
-## `lslr.R` Description
-
+### lslr.R
 The `lslr.R` script performs a **simple linear regression** using a set of `x` and `y` values. It:
 
 1. Defines two vectors (`x` and `y`) containing numeric data.
@@ -39,5 +38,4 @@ The `lslr.R` script performs a **simple linear regression** using a set of `x` a
 3. Extracts **residuals** (differences between actual and predicted values).
 4. Extracts **fitted values** (predicted `y` values from the model).
 5. Plots the residuals against `x` in a **residual plot**, which helps visualize how well the model fits the data.
-
 
