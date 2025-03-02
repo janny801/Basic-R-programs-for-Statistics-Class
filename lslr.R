@@ -7,17 +7,16 @@ model <- lm(y ~ x)
 
 # Extract residuals and fitted values
 residuals <- resid(model)
-fitted_values <- fitted(model)
 
-# Set up a 1-row, 2-column plotting layout
-par(mfrow = c(1, 2))
+# Adjust plotting layout for better visibility
+par(mfrow = c(2, 1), mar = c(5, 5, 4, 2) + 0.1)  # 2 rows, 1 column
 
-# Plot the original scatter plot with regression line
+# Plot scatter plot with regression line
 plot(x, y, main = "Scatter Plot with LSRL", xlab = "X Values", ylab = "Y Values", pch = 16, col = "blue")
-abline(model, col = "red", lwd = 2)  # Add the least squares regression line
+abline(model, col = "red", lwd = 2)
 
-# Create the residual plot without a horizontal line
+# Plot residuals
 plot(x, residuals, main = "Residual Plot", xlab = "X Values", ylab = "Residuals", pch = 16, col = "blue")
 
-# Reset the plotting layout to default
+# Reset plotting layout
 par(mfrow = c(1, 1))
