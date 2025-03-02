@@ -17,10 +17,12 @@ plot(x, y, main = "Scatter Plot with LSRL", xlab = "X Values", ylab = "Y Values"
 axis(2, seq(0, max(y) + 5, by = 5))  # Manually set y-axis ticks at intervals of 5
 abline(model, col = "red", lwd = 2)
 
-# Plot residuals with customized y-axis
+# Plot residuals with x-axis at y = 0
 plot(x, residuals, main = "Residual Plot", xlab = "X Values", ylab = "Residuals", pch = 16, col = "blue",
-     ylim = c(floor(min(residuals)), ceiling(max(residuals))))  # Ensure y-axis covers residuals
+     ylim = c(floor(min(residuals)), ceiling(max(residuals))), axes = FALSE)  # Disable default axes
 axis(2, seq(floor(min(residuals)), ceiling(max(residuals)), by = 1))  # Y-axis ticks by 1
+axis(1, at = x, pos = 0)  # Force x-axis to be at y = 0
+abline(h = 0, col = "black", lwd = 2)  # Draw reference line at y = 0
 
 # Reset plotting layout
 par(mfrow = c(1, 1))
