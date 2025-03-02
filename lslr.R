@@ -12,6 +12,10 @@ print(summary(model))
 intercept <- coef(model)[1]
 slope <- coef(model)[2]
 
+# Find a better position for the equation (midpoint of regression line)
+mid_x <- mean(range(x))  # Midpoint of x-values
+mid_y <- intercept + slope * mid_x  # Predicted y-value at midpoint
+
 # Adjust plotting layout for better visibility
 par(mfrow = c(2, 1), mar = c(5, 5, 4, 2) + 0.1)  # 2 rows, 1 column
 
@@ -21,9 +25,9 @@ plot(x, y, main = "Scatter Plot with LSRL", xlab = "X Values", ylab = "Y Values"
 axis(2, seq(0, max(y) + 5, by = 5))  # Manually set y-axis ticks at intervals of 5
 abline(model, col = "red", lwd = 2)  # Add regression line
 
-# Display equation on the scatter plot
+# Display equation near the regression line
 eq_text <- paste0("y = ", round(intercept, 2), " + ", round(slope, 2), "x")
-text(mean(x), max(y), eq_text, col = "red", cex = 1.2, font = 2)
+text(mid_x, mid_y + 2, eq_text, col = "red", cex = 1.2, font = 2)  # Shift text slightly above the line
 
 # Plot residuals with x-axis at y = 0
 plot(x, residuals, main = "Residual Plot", xlab = "X Values", ylab = "Residuals", pch = 16, col = "blue",
