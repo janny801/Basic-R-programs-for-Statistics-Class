@@ -46,4 +46,17 @@ The `lslr.R` script performs a **simple linear regression** using a set of `x` a
 5. Plots the residuals against `x` in a **residual plot**, which helps visualize how well the model fits the data.
 
 
+## **Assumptions of Simple Linear Regression**
+For the regression model to be valid, these conditions should be met:
+- **Linearity**: The relationship between `x` and `y` should be linear.
+- **Independence**: Observations should be independent.
+- **Homoscedasticity**: Residuals should have constant variance.
+- **Normality of Residuals**: Residuals should be approximately normally distributed.
+
+This script helps assess whether a simple linear regression model is appropriate for a given dataset.
+
+
+
+
+
 
