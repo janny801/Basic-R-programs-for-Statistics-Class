@@ -30,10 +30,7 @@ Once these steps are completed, you should be able to write and execute R script
 
 # Repository Contents
 
-```
-lslr.R
-```
-
+> **lslr.R**
 
 ### What is the Least Squares Regression Line (LSRL)?
 The **Least Squares Regression Line (LSRL)** is the best-fitting straight line that minimizes the sum of squared residuals. It models the relationship between an independent variable (`x`) and a dependent variable (`y`) using a linear equation of the form:
