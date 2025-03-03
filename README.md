@@ -27,21 +27,15 @@ If you plan to use **Visual Studio Code (VS Code)** for running and editing R sc
 
 Once these steps are completed, you should be able to write and execute R scripts smoothly within VS Code.
 
-
 # Repository Contents
 
 ### lslr.R
 
 ## **What is the Least Squares Regression Line (LSRL)?**
-The **Least Squares Regression Line (LSRL)** is the best-fitting straight line that minimizes the sum of squared residuals. It models the relationship between an independent variable (`x`) and a dependent variable (`y`) using the equation:
+The **Least Squares Regression Line (LSRL)** is the best-fitting straight line that minimizes the sum of squared residuals. It models the relationship between an independent variable (`x`) and a dependent variable (`y`) using a linear equation of the form:
 
-\[
-y = b_0 + b_1x
-\]
-
-where:
-- \( b_0 \) (intercept) is the predicted `y` value when `x = 0`.
-- \( b_1 \) (slope) represents how much `y` changes for each unit increase in `x`.
+- The **intercept** represents the predicted `y` value when `x = 0`.
+- The **slope** represents how much `y` changes for each unit increase in `x`.
 
 The `lslr.R` script performs a **simple linear regression** using a set of `x` and `y` values. It:
 
@@ -50,4 +44,6 @@ The `lslr.R` script performs a **simple linear regression** using a set of `x` a
 3. Extracts **residuals** (differences between actual and predicted values).
 4. Extracts **fitted values** (predicted `y` values from the model).
 5. Plots the residuals against `x` in a **residual plot**, which helps visualize how well the model fits the data.
+
+
 
