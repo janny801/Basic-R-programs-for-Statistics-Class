@@ -31,6 +31,18 @@ Once these steps are completed, you should be able to write and execute R script
 # Repository Contents
 
 ### lslr.R
+
+## **What is the Least Squares Regression Line (LSRL)?**
+The **Least Squares Regression Line (LSRL)** is the best-fitting straight line that minimizes the sum of squared residuals. It models the relationship between an independent variable (`x`) and a dependent variable (`y`) using the equation:
+
+\[
+y = b_0 + b_1x
+\]
+
+where:
+- \( b_0 \) (intercept) is the predicted `y` value when `x = 0`.
+- \( b_1 \) (slope) represents how much `y` changes for each unit increase in `x`.
+
 The `lslr.R` script performs a **simple linear regression** using a set of `x` and `y` values. It:
 
 1. Defines two vectors (`x` and `y`) containing numeric data.
