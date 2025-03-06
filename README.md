@@ -86,3 +86,5 @@ Below is the regression summary output from the `lsrl.R` script:
   - Since it's lower than the multiple R², it suggests that additional predictors may improve the model.
 - **P-value for x (0.139)**:
   - This suggests that the relationship between `x` and `y` is not statistically significant at the common 0.05 significance level.
+
+Overall, while the model suggests a positive relationship between `x` and `y`, the R² value indicates that other factors may also influence `y`, and the model does not explain all of the variability.
