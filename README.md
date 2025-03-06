@@ -78,3 +78,13 @@ Below is the regression summary output from the `lsrl.R` script:
 - The regression equation is **y = 13 + 2.57x**, where:
   - **Intercept (13)**: This represents the expected `y` value when `x = 0`. It serves as the baseline prediction.
   - **Slope (2.57)**: This means that for every one-unit increase in `x`, the predicted `y` increases by **2.57** units.
+- **Multiple R-squared: 0.4592**:
+  - This value represents the **coefficient of determination**, which measures how well the model explains the variability in `y`.
+  - An **R² of 0.4592** means that **45.92%** of the variance in `y` is explained by `x`, indicating a moderate linear relationship.
+- **Adjusted R-squared: 0.324**:
+  - This adjusts for the number of predictors in the model and provides a more accurate measure of goodness-of-fit.
+  - Since it's lower than the multiple R², it suggests that additional predictors may improve the model.
+- **P-value for x (0.139)**:
+  - This suggests that the relationship between `x` and `y` is not statistically significant at the common 0.05 significance level.
+- **F-statistic (3.396, p-value: 0.1391)**:
+  - This indicates the overall significance of the model, which is not strong in this case.
