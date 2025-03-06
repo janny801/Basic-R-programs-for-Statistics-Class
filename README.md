@@ -86,5 +86,3 @@ Below is the regression summary output from the `lsrl.R` script:
   - Since it's lower than the multiple R², it suggests that additional predictors may improve the model.
 - **P-value for x (0.139)**:
   - This suggests that the relationship between `x` and `y` is not statistically significant at the common 0.05 significance level.
-- **F-statistic (3.396, p-value: 0.1391)**:
-  - This indicates the overall significance of the model, which is not strong in this case.
