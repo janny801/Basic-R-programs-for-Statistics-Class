@@ -49,9 +49,11 @@ cat("Mean(X) =", mean_x, "\n")
 
 # Compute Expected Value E[X^2]
 # Integral of x^2 * f(x) over the range [0,1]
-Ex2 = integrate(function(x) x^2 * f(x), lower = 0, upper = 1)$value
+ex_2 = integrate(function(x) {
+  x^2 * f(x)
+}, lower = 0, upper = 1)$value
 
 # Compute Variance Var(X)
 # Variance formula: Var(X) = E[X^2] - (E[X])^2
-variance_x = Ex2 - (mean_x^2)
+variance_x = ex_2 - (mean_x^2)
 cat("Variance(X) =", variance_x, "\n")
