@@ -60,9 +60,8 @@ cat("Variance(X) =", variance_x, "\n")
 
 # Define the cumulative distribution function (CDF)
 # The CDF is computed by integrating the PDF from 0 to x
-F_x = function(x) sapply(x, function(xi) 
-{ 
-    integrate(f, lower = 0, upper = xi)$value 
+F_x = function(x) sapply(x, function(xi) {
+  integrate(f, lower = 0, upper = xi)$value
 })
 
 # Generate x values from 0 to 1
@@ -72,7 +71,6 @@ x_vals = seq(0, 1, length.out = 100)
 cdf_vals = F_x(x_vals)
 
 # Plot the cumulative distribution function (CDF)
-plot(x_vals, cdf_vals, type = "l", xlab = "x", ylab = "F(x)", 
+plot(x_vals, cdf_vals, type = "l", xlab = "x", ylab = "F(x)",
      main = "Cumulative Distribution Function")
-
 
