@@ -2,7 +2,10 @@
 # We want the integral of f(x) from 0 to 1 to be 1.
 
 # Define the probability density function f(x) = kx(1 - x)
-f = function(x, k) { k * x * (1 - x) }
+f = function(x, k) 
+{ 
+    k * x * (1 - x) 
+}
 
 # Integrate f(x) over the range [0, 1] to find the normalization condition
 # We set the integral equal to 1 and solve for k
