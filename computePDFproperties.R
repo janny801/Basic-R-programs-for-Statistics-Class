@@ -1,4 +1,4 @@
-# Define the constant k by solving for it to satisfy the density function condition
+#Solve for the constant k to satisfy the density function condition
 # We want the integral of f(x) from 0 to 1 to be 1.
 
 # Define the probability density function f(x) = kx(1 - x)
