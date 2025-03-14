@@ -122,3 +122,10 @@ The script analyzes the given PDF by performing the following tasks:
 4. **Computes and Plots the Cumulative Distribution Function (CDF)**  
    - The **CDF** is obtained by integrating the **PDF** from `0` to `x`.  
    - A **CDF plot** is generated to visualize how probability accumulates across the interval `[0,1]`.
+
+### Assumptions of the Probability Model  
+For the probability distribution to be valid, the following conditions must be met:
+
+- **Non-Negativity**: `f(x) ≥ 0` for all `x` in `[0,1]`.  
+- **Normalization**: The total area under the **PDF** curve must equal **1**.
+
