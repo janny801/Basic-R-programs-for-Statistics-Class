@@ -101,3 +101,24 @@ The `computePDFproperties.R` script defines and analyzes a **custom probability 
 - The **constant `k`** is determined to ensure the function is properly normalized so that the total probability equals **1**.
 
 The script then performs various computations related to this probability distribution.
+
+### What Does `computePDFproperties.R` Do?  
+The script analyzes the given PDF by performing the following tasks:
+
+1. **Computes the Normalization Constant (`k`)**  
+   - Solves for `k` so that **∫₀¹ f(x) dx = 1**.
+
+2. **Calculates Probability Values**  
+   - **P(0.4 < X < 1)**: Probability that `X` falls between `0.4` and `1`.  
+   - **P(X ≤ 0.4)**: Probability that `X` is less than or equal to `0.4`.  
+   - **P(X < 0.8)**: Probability that `X` is less than `0.8`.  
+   - **Conditional Probability P(X < 0.4 | X < 0.8)**: Computed using **P(A | B) = P(A ∩ B) / P(B)**.
+
+3. **Computes Statistical Properties**  
+   - **Expected Value (`E[X]`)**: The mean of `X`.  
+   - **Expected Value (`E[X²]`)**: A key component for variance calculation.  
+   - **Variance (`Var(X)`)**: Measures how much `X` deviates from its mean, calculated using **Var(X) = E[X²] - (E[X])²**.
+
+4. **Computes and Plots the Cumulative Distribution Function (CDF)**  
+   - The **CDF** is obtained by integrating the **PDF** from `0` to `x`.  
+   - A **CDF plot** is generated to visualize how probability accumulates across the interval `[0,1]`.
