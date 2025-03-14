@@ -89,3 +89,8 @@ Below is the regression summary output from the `lsrl.R` script:
   - This suggests that the relationship between `x` and `y` is not statistically significant at the common 0.05 significance level.
 
 Overall, while the model suggests a positive relationship between `x` and `y`, the R² value indicates that other factors may also influence `y`, and the model does not explain all of the variability.
+
+`computePDFproperties.R`
+
+### What is the Probability Density Function (PDF)?  
+A **Probability Density Function (PDF)** represents the probability distribution of a continuous random variable. It describes the likelihood of a variable taking on different values within a specified range. The area under the PDF over an interval corresponds to the probability that the variable falls within that interval.
