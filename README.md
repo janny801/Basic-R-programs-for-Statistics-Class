@@ -94,3 +94,10 @@ Overall, while the model suggests a positive relationship between `x` and `y`, t
 
 ### What is the Probability Density Function (PDF)?  
 A **Probability Density Function (PDF)** represents the probability distribution of a continuous random variable. It describes the likelihood of a variable taking on different values within a specified range. The area under the PDF over an interval corresponds to the probability that the variable falls within that interval.
+
+The `computePDFproperties.R` script defines and analyzes a **custom probability density function (PDF)** given by:
+
+- **f(x) = kx(1 - x)** for `x` in `[0,1]`
+- The **constant `k`** is determined to ensure the function is properly normalized so that the total probability equals **1**.
+
+The script then performs various computations related to this probability distribution.
