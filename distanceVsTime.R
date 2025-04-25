@@ -24,3 +24,11 @@ abline(h = 0)
 
 # e: test significance of slope
 summary(model)
+
+pval <- summary(model)$coefficients["x", "Pr(>|t|)"]
+alpha <- 0.05
+if (pval < alpha) {
+  cat("Reject H0: slope ≠ 0 (p =", pval, ")\n")
+} else {
+  cat("Fail to reject H0: slope = 0 (p =", pval, ")\n")
+}
