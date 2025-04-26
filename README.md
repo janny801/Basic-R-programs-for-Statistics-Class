@@ -154,3 +154,12 @@ The `distancevstime.R` script performs a **simple linear regression** on a small
 - **Scatterplot**: Visualizes how commute time varies with distance.
 - **Model Fitting**: Uses `lm(y ~ x)` to estimate intercept and slope, then prints the coefficient of determination (**R²**).
 - **Residual Plot**: Plots the residuals (actual – predicted times) against distance with a horizontal zero line to check for randomness and constant variance.
+
+### Plots
+
+![Commute Distance vs Time](images/commutedistancevstime.png)  
+![Residuals vs Distance](images/residualsvsdistance.png)
+
+**Description of the Plots:**
+- **Commute Distance vs Time**: Each point represents one drive. The overall trend shows whether longer distances typically take more time.
+- **Residuals vs Distance**: Displays deviations from the fitted line. A random scatter around zero suggests that the linear model is appropriate.
