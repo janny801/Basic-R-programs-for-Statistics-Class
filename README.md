@@ -163,3 +163,12 @@ The `distancevstime.R` script performs a **simple linear regression** on a small
 **Description of the Plots:**
 - **Commute Distance vs Time**: Each point represents one drive. The overall trend shows whether longer distances typically take more time.
 - **Residuals vs Distance**: Displays deviations from the fitted line. A random scatter around zero suggests that the linear model is appropriate.
+
+### Output
+
+When you run the script, you’ll see:
+
+```
+[1] 0.433
+Fail to reject H0: slope = 0 (p = 0.155)
+```
