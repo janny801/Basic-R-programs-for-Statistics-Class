@@ -172,3 +172,9 @@ When you run the script, you’ll see:
 [1] 0.433
 Fail to reject H0: slope = 0 (p = 0.155)
 ```
+
+**Summary of the Output:**
+- The first line is the **R² value**, printed by `print(r2)`.
+- The second line reports the hypothesis test result at α = 0.05.  
+  Since **p ≈ 0.155 > 0.05**, we **fail to reject H₀** (the slope is not significantly different from zero).
+- If you change the `x` or `y` values, both **R²** and the **p-value** will change, which may alter whether you reject H₀.
