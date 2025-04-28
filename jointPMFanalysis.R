@@ -21,7 +21,9 @@ exp_x_plus_y = sum((joint_df$x + joint_df$y) * joint_df$pmf)
 exp_xy = sum(joint_df$x * joint_df$y * joint_df$pmf)
 
 # print results
-print(prob_xle2_y1)    # ≈ 0.2142857
-print(prob_x_plus_y_eq4)  # ≈ 0.2619048
-print(exp_x_plus_y)    # ≈ 3.238095
-print(exp_xy)          # ≈ 2.428571
+cat("P(X <= 2, Y = 1) =", prob_xle2_y1, "\n")
+cat("P(X + Y = 4) =", prob_x_plus_y_eq4, "\n")
+cat("E(X + Y) =", exp_x_plus_y, "\n")
+cat("E(X * Y) =", exp_xy, "\n")
+
+
