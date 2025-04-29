@@ -194,3 +194,19 @@ Fail to reject H0: slope = 0 (p = 0.155)
 <div align="center">
 <h3><code>jointPMFanalysis.R</code></h3>
 </div>
+
+### What is the Joint PMF Analysis?
+The `jointPMFanalysis.R` script computes key probabilities and expectations for two discrete variables X and Y with joint PMF f(x,y) = (x + 2·y)/42:
+
+- **Value ranges**:  
+  - `x_vals` = 0,1,2,3  
+  - `y_vals` = 0,1,2  
+- **Grid**: builds all (x,y) combinations.  
+- **PMF**: calculates f(x,y) for each pair.  
+- **Probabilities**:  
+  - `prob_xle2_y1`: P(X ≤ 2, Y = 1)  
+  - `prob_x_plus_y_eq4`: P(X + Y = 4)  
+- **Expectations**:  
+  - `exp_x_plus_y` = E(X + Y)  
+  - `exp_xy` = E(X·Y)  
+- **Output**: prints the four numeric results.
