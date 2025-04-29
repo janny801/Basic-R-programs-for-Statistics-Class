@@ -188,3 +188,9 @@ Fail to reject H0: slope = 0 (p = 0.155)
 - The second line reports the hypothesis test result at α = 0.05.  
   Since **p ≈ 0.155 > 0.05**, we **fail to reject H₀** (the slope is not significantly different from zero).
 - If you change the `x` or `y` values, both **R²** and the **p-value** will change, which may alter whether you reject H₀.
+
+---
+
+<div align="center">
+<h3><code>jointPMFanalysis.R</code></h3>
+</div>
