@@ -210,3 +210,21 @@ The `jointPMFanalysis.R` script computes key probabilities and expectations for 
   - `exp_x_plus_y` = E(X + Y)  
   - `exp_xy` = E(X·Y)  
 - **Output**: prints the four numeric results.
+  - Shown Below 
+
+### Output
+
+When you run the script, it prints the results of the following in order:
+
+- **P(X ≤ 2, Y = 1)**  
+  The probability that the random variable X is at most 2 **and** Y equals 1.
+
+- **P(X + Y = 4)**  
+  The probability that the sum of X and Y is exactly 4.
+
+- **E(X + Y)**  
+  The expected (average) value of the sum X + Y over all possible outcomes.
+
+- **E(X·Y)**  
+  The expected (average) value of the product X × Y over all possible outcomes.
+
