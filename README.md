@@ -1,7 +1,8 @@
 # Basic R programs for Statistics Class
 
 ## Overview
-These programs are being written for a statistics class that I am currently taking at my university. The repository will be updated throughout the course as I work on different statistical concepts and analyses using R. Topics covered will include probability, descriptive statistics, hypothesis testing, regression, and more.
+These programs were written as part of a statistics class I completed at my university. The repository contains scripts developed throughout the course, covering a range of statistical concepts and analyses using R. Topics include probability, descriptive statistics, hypothesis testing, regression, and more.
+
 
 ### Prerequisites
 To run these programs, you need to have R installed on your system. You can download it from the official CRAN website:  
