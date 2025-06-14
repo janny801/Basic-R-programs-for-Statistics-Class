@@ -3,6 +3,7 @@
 ## Overview
 These programs were written as part of a statistics class I completed at my university. The repository contains scripts developed throughout the course, covering a range of statistical concepts and analyses using R. Topics include probability, descriptive statistics, hypothesis testing, regression, and more.
 
+All core assignments have been completed, and the repository is now archived for reference and learning.
 
 ### Prerequisites
 To run these programs, you need to have R installed on your system. You can download it from the official CRAN website:  
