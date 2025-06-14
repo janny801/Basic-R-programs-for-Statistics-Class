@@ -32,6 +32,13 @@ Once these steps are completed, you should be able to write and execute R script
 
 # Repository Contents
 
+This repository includes the following R scripts:
+
+- **`lsrl.R`** – Performs a simple linear regression and generates a residual plot.
+- **`computePDFproperties.R`** – Analyzes a custom continuous probability density function (PDF), computes key probabilities and expected values, and plots the cumulative distribution function (CDF).
+- **`distanceVsTime.R`** – Uses linear regression to examine the relationship between commute distance and time, with diagnostic plots and statistical output.
+- **`jointPMFanalysis.R`** – Computes probabilities and expectations for a joint probability mass function (PMF) of two discrete random variables.
+
 <div align="center">
 <h3><code>lsrl.R</code></h3>
 </div>
